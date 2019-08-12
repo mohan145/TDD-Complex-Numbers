@@ -29,3 +29,10 @@ def test_conjugate_with_imaginary_value():
     complex_number.conjugate()
     assert complex_number.real_value == 1
     assert complex_number.imaginary_value == -2
+
+
+def test_get_conjugate_complex_number():
+    complex_number = ComplexNumber(real_value=1, imaginary_value=2)
+    con = complex_number.conjugate()
+    assert con.real_value == 1
+    assert con.imaginary_value == -2
