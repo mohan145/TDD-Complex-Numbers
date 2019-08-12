@@ -40,3 +40,8 @@ class ComplexNumber:
                               (self.real_value * other.imaginary_value)
 
         return ComplexNumber(res_real_value, res_imaginary_value)
+
+    def __truediv__(self, other):
+
+        res_real_value = round(self.real_value / other.real_value,2)
+        return ComplexNumber(res_real_value, self.imaginary_value)
