@@ -147,3 +147,7 @@ def test_absolute_real_part():
     result = c1.absolute()
     assert result == 0.00
 
+
+def test_absolute_img_part():
+    c1 = ComplexNumber(0, 1)
+    c1.absolute()
