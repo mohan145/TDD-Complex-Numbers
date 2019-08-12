@@ -159,3 +159,10 @@ def test_absolute_complex_number():
 
     result = c1.absolute()
     assert result == 63.435
+
+
+def test_polar_real_part():
+    c1 = ComplexNumber(1, 2)
+    result = c1.polar()
+
+    assert result == (0.00, 0.00)
