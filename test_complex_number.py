@@ -13,4 +13,6 @@ def test_complex_number_attributes():
     assert complex_number.imaginary_value == 3
 
 
-
+def test_instantiation_complex_number():
+    complex_number = ComplexNumber(real_value=1, imaginary_value=2)
+    assert str(complex_number) == "1+2i"
