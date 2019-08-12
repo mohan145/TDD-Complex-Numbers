@@ -117,3 +117,10 @@ def test_division_of_complex_number():
     c3 = c1 / c2
     assert c3.imaginary_value == 0.08
     assert c3.real_value == 0.44
+
+
+def test_phase_real_part():
+    c1 = ComplexNumber(1, 0)
+    result = c1.phase()
+
+    assert result == 0.79
