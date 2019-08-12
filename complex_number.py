@@ -13,4 +13,4 @@ class ComplexNumber:
                    str(self.imaginary_value) + "i"
 
     def conjugate(self):
-        pass
+        self.imaginary_value *= -1
