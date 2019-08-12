@@ -139,3 +139,11 @@ def test_phase_complex_number():
     result = c1.phase()
 
     assert result == 1.11
+
+
+def test_absolute_real_part():
+    c1 = ComplexNumber(1, 0)
+
+    result = c1.absolute()
+    assert result == 0.00
+
