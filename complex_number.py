@@ -13,4 +13,7 @@ class ComplexNumber:
                    str(self.imaginary_value) + "i"
 
     def conjugate(self):
-        self.imaginary_value *= -1
+        res_real_value = self.real_value
+        res_img_value = self.imaginary_value * -1
+
+        return ComplexNumber(res_real_value, res_img_value)
