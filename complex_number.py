@@ -43,5 +43,11 @@ class ComplexNumber:
 
     def __truediv__(self, other):
 
-        res_real_value = round(self.real_value / other.real_value,2)
-        return ComplexNumber(res_real_value, self.imaginary_value)
+        res_real_value = round(self.real_value / other.real_value, 2)
+
+        conjugate = other.conjugate()
+        num = self * conjugate
+        din = other * conjugate
+        res_imaginary_value = num.imaginary_value / din.real_value
+
+        return ComplexNumber(res_real_value, res_imaginary_value)
