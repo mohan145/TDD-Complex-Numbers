@@ -29,3 +29,12 @@ def test_get_conjugate_complex_number():
     con = complex_number.conjugate()
     assert con.real_value == 1
     assert con.imaginary_value == -2
+
+
+def test_add_real_part():
+    c1 = ComplexNumber(1, 2)
+    c2 = ComplexNumber(3, 4)
+
+    c3 = c1 + c2
+
+    assert c3.real_value == (c1.real_value + c2.real_value)
