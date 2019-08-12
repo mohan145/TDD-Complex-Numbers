@@ -172,3 +172,9 @@ def test_polar_img_part():
     c1 = ComplexNumber(0, 1)
     with pytest.raises(ZeroDivisionError):
         c1.polar()
+
+
+def test_polar_complex_number():
+    c1 = ComplexNumber(1, 2)
+    result = c1.polar()
+    assert result == (1.11, 63.435)
