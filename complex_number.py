@@ -65,8 +65,11 @@ class ComplexNumber:
         return round(phase, 2)
 
     def absolute(self):
-        phase = self.phase()
+        try:
+            phase = self.phase()
+        except ZeroDivisionError:
 
+            raise ZeroDivisionError
         abs = math.degrees(phase)
 
         return round(abs, 2)

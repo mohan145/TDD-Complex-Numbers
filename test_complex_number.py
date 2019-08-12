@@ -150,4 +150,5 @@ def test_absolute_real_part():
 
 def test_absolute_img_part():
     c1 = ComplexNumber(0, 1)
-    c1.absolute()
+    with pytest.raises(ZeroDivisionError):
+        c1.absolute()
