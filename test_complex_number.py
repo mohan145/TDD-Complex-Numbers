@@ -80,10 +80,10 @@ def test_mul_real_value():
 
 def test_mul_img_value():
     c1 = ComplexNumber(0, -1)
-    c2 = ComplexNumber(1, 2)
+    c2 = ComplexNumber(0, 2)
 
     c3 = c1 * c2
-    assert c3.imaginary_value == 2
+    assert c3.imaginary_value == 0
 
 
 def test_multiply_complex_numbers():

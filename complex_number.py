@@ -32,6 +32,11 @@ class ComplexNumber:
 
     def __mul__(self, other):
 
-        res_real_value = self.real_value * other.real_value
-        res_img_value = self.imaginary_value * other.imaginary_value * -1
-        return ComplexNumber(res_real_value, res_img_value)
+        res_real_value = self.real_value * other.real_value + \
+                         self.imaginary_value * (
+                                 -1 * other.imaginary_value)
+
+        res_imaginary_value = (self.imaginary_value * other.real_value) + \
+                              (self.real_value * other.imaginary_value)
+
+        return ComplexNumber(res_real_value, res_imaginary_value)
