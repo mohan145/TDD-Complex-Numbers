@@ -48,3 +48,11 @@ def test_add_img_value():
 
     assert c3.real_value == (c1.real_value + c2.real_value)
     assert c3.imaginary_value == (c1.imaginary_value + c2.imaginary_value)
+
+def test_sub_real_part():
+    c1 = ComplexNumber(1, 0)
+    c2 = ComplexNumber(3, 0)
+
+    c3 = c1 - c2
+
+    assert c3.real_value == (c1.real_value - c2.real_value)
