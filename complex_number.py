@@ -1,3 +1,6 @@
+import math
+
+
 class ComplexNumber:
 
     def __init__(self, real_value, imaginary_value):
@@ -47,7 +50,11 @@ class ComplexNumber:
         num = self * conjugate
         din = other * conjugate
 
-        res_imaginary_value = round(num.imaginary_value / din.real_value,2)
-        res_real_value = round(num.real_value / din.real_value,2)
+        res_imaginary_value = round(num.imaginary_value / din.real_value, 2)
+        res_real_value = round(num.real_value / din.real_value, 2)
 
         return ComplexNumber(res_real_value, res_imaginary_value)
+
+    def phase(self):
+
+        return math.atan(self.imaginary_value / self.real_value)

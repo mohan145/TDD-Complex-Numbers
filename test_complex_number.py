@@ -123,4 +123,4 @@ def test_phase_real_part():
     c1 = ComplexNumber(1, 0)
     result = c1.phase()
 
-    assert result == 0.79
+    assert result == 0.00
