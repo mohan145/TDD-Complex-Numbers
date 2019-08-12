@@ -1,3 +1,5 @@
+import pytest
+
 from complex_number import ComplexNumber
 
 
@@ -124,3 +126,9 @@ def test_phase_real_part():
     result = c1.phase()
 
     assert result == 0.00
+
+
+def test_phase_img_part():
+    c1 = ComplexNumber(0, 1)
+    result = c1.phase()
+
