@@ -66,10 +66,10 @@ class ComplexNumber:
 
     def absolute(self):
         try:
-            phase = self.phase()
+            phase = math.atan(self.imaginary_value / self.real_value)
         except ZeroDivisionError:
 
             raise ZeroDivisionError
         abs = math.degrees(phase)
 
-        return round(abs, 2)
+        return round(abs, 3)
