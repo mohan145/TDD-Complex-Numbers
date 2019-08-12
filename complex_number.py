@@ -1,6 +1,3 @@
-
-
-
 class ComplexNumber:
 
     def __init__(self, real_value, imaginary_value):
@@ -14,3 +11,6 @@ class ComplexNumber:
         else:
             return str(self.real_value) + "+" + \
                    str(self.imaginary_value) + "i"
+
+    def conjugate(self):
+        pass
