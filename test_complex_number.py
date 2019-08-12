@@ -22,3 +22,10 @@ def test_conjugate_real_part():
     complex_number = ComplexNumber(real_value=1, imaginary_value=2)
     complex_number.conjugate()
     assert complex_number.real_value == 1
+
+
+def test_conjugate_with_imaginary_value():
+    complex_number = ComplexNumber(real_value=1, imaginary_value=2)
+    complex_number.conjugate()
+    assert complex_number.real_value == 1
+    assert complex_number.imaginary_value == -2
