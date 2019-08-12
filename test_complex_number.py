@@ -93,3 +93,11 @@ def test_multiply_complex_numbers():
 
     assert c3.imaginary_value == 10
     assert c3.real_value == -5
+
+
+def test_div_real_value():
+    c1 = ComplexNumber(1, 0)
+    c2 = ComplexNumber(3, 0)
+
+    c3 = c1 / c2
+    assert c3.real_value == 0.33
