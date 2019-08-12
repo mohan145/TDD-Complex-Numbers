@@ -84,3 +84,12 @@ def test_mul_img_value():
 
     c3 = c1 * c2
     assert c3.imaginary_value == 2
+
+
+def test_multiply_complex_numbers():
+    c1 = ComplexNumber(1, 2)
+    c2 = ComplexNumber(3, 4)
+    c3 = c1 * c2
+
+    assert c3.imaginary_value == 10
+    assert c3.real_value == -5
