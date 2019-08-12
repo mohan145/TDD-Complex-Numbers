@@ -152,3 +152,10 @@ def test_absolute_img_part():
     c1 = ComplexNumber(0, 1)
     with pytest.raises(ZeroDivisionError):
         c1.absolute()
+
+
+def test_absolute_complex_number():
+    c1 = ComplexNumber(1, 2)
+
+    result = c1.absolute()
+    assert result == 63.435
