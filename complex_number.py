@@ -23,3 +23,8 @@ class ComplexNumber:
         res_img_value = self.imaginary_value + other.imaginary_value
 
         return ComplexNumber(res_real_value, res_img_value)
+
+    def __sub__(self, other):
+        res_real_value = self.real_value - other.real_value
+
+        return ComplexNumber(res_real_value, self.imaginary_value)
