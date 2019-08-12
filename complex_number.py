@@ -57,4 +57,9 @@ class ComplexNumber:
 
     def phase(self):
 
-        return math.atan(self.imaginary_value / self.real_value)
+        try:
+            phase = math.atan(self.imaginary_value / self.real_value)
+        except ZeroDivisionError:
+            raise ZeroDivisionError
+
+        return phase

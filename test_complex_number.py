@@ -130,5 +130,6 @@ def test_phase_real_part():
 
 def test_phase_img_part():
     c1 = ComplexNumber(0, 1)
-    result = c1.phase()
+    with pytest.raises(ZeroDivisionError):
+        c1.phase()
 
