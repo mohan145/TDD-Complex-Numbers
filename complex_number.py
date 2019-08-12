@@ -73,3 +73,7 @@ class ComplexNumber:
         abs = math.degrees(phase)
 
         return round(abs, 3)
+
+    def polar(self):
+
+        return self.phase(), self.absolute()
