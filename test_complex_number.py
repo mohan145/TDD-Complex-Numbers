@@ -170,4 +170,5 @@ def test_polar_real_part():
 
 def test_polar_img_part():
     c1 = ComplexNumber(0, 1)
-    c1.polar()
+    with pytest.raises(ZeroDivisionError):
+        c1.polar()

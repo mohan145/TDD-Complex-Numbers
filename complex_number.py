@@ -76,4 +76,14 @@ class ComplexNumber:
 
     def polar(self):
 
-        return self.phase(), self.absolute()
+        try:
+            phase = self.phase()
+        except ZeroDivisionError:
+            raise ZeroDivisionError
+
+        try:
+            abs = self.absolute()
+        except ZeroDivisionError:
+            raise ZeroDivisionError
+
+        return phase, abs
