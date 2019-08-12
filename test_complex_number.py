@@ -133,3 +133,8 @@ def test_phase_img_part():
     with pytest.raises(ZeroDivisionError):
         c1.phase()
 
+
+def test_phase_complex_number():
+    c1 = ComplexNumber(1, 2)
+
+    assert c1.phase() == '1.11'
