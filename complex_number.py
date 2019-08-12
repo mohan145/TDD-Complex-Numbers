@@ -62,4 +62,4 @@ class ComplexNumber:
         except ZeroDivisionError:
             raise ZeroDivisionError
 
-        return phase
+        return round(phase, 2)

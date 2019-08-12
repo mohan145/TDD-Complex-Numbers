@@ -136,5 +136,6 @@ def test_phase_img_part():
 
 def test_phase_complex_number():
     c1 = ComplexNumber(1, 2)
+    result = c1.phase()
 
-    assert c1.phase() == '1.11'
+    assert result == 1.11
