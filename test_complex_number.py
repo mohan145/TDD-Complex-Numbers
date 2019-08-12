@@ -166,3 +166,8 @@ def test_polar_real_part():
     result = c1.polar()
 
     assert result == (0.00, 0.00)
+
+
+def test_polar_img_part():
+    c1 = ComplexNumber(0, 1)
+    c1.polar()
