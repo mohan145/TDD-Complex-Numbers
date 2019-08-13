@@ -184,3 +184,9 @@ def test_absolute_v2_definition():
     c1 = ComplexNumber(0, 0)
     result = c1.absolute_v2()
     assert result == 0
+
+def test_absolute_v2_real_part():
+    c1 = ComplexNumber(3, 0)
+    result = c1.absolute_v2()
+    assert result == 3
+
