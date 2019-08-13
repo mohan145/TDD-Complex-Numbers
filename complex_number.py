@@ -90,4 +90,4 @@ class ComplexNumber:
 
     def absolute_v2(self):
 
-        return 0
+        return self.real_value
