@@ -90,5 +90,9 @@ class ComplexNumber:
 
     def absolute_v2(self):
 
-        return round(
-            math.sqrt(self.real_value ** 2 + self.imaginary_value ** 2), 2)
+        arg_1 = self.real_value ** 2
+        arg_2 = self.imaginary_value ** 2
+
+        abs_val = math.sqrt(arg_1 + arg_2)
+        abs_val_rounded = round(abs_val, 2)
+        return abs_val_rounded
