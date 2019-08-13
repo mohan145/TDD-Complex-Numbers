@@ -185,8 +185,14 @@ def test_absolute_v2_definition():
     result = c1.absolute_v2()
     assert result == 0
 
+
 def test_absolute_v2_real_part():
     c1 = ComplexNumber(3, 0)
     result = c1.absolute_v2()
     assert result == 3
 
+
+def test_absolute_v2_complex_number():
+    c1 = ComplexNumber(3, 4)
+    result = c1.absolute_v2()
+    assert result == 5.00
