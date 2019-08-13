@@ -88,4 +88,6 @@ class ComplexNumber:
 
         return phase, abs
 
+    def absolute_v2(self):
 
+        return 0
