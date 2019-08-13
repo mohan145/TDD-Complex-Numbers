@@ -128,7 +128,7 @@ def test_phase_real_part():
     assert result == 0.00
 
 
-def test_phase_img_part():
+def test_phase_img_part_zero_division_error():
     c1 = ComplexNumber(0, 1)
     with pytest.raises(ZeroDivisionError):
         c1.phase()
@@ -148,7 +148,7 @@ def test_absolute_real_part():
     assert result == 0.00
 
 
-def test_absolute_img_part():
+def test_absolute_img_part_zero_division_error():
     c1 = ComplexNumber(0, 1)
     with pytest.raises(ZeroDivisionError):
         c1.absolute()
@@ -168,7 +168,7 @@ def test_polar_real_part():
     assert result == (0.00, 0.00)
 
 
-def test_polar_img_part():
+def test_polar_img_part_zero_division_error():
     c1 = ComplexNumber(0, 1)
     with pytest.raises(ZeroDivisionError):
         c1.polar()
