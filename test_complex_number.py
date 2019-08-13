@@ -178,3 +178,9 @@ def test_polar_complex_number():
     c1 = ComplexNumber(1, 2)
     result = c1.polar()
     assert result == (1.11, 63.435)
+
+
+def test_absolute_v2_definition():
+    c1 = ComplexNumber(0, 0)
+    result = c1.absolute_v2()
+    assert result == 0
